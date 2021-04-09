@@ -1,0 +1,19 @@
+- hosts: webserver
+  tasks:
+  - name: "Uninstalling php...."
+    command: "yum remove php -y"
+
+  - name: "Uninstalling httpd...."
+    command: "yum remove httpd -y"
+
+  - name: "Deliting files...."
+    command: "rm -rf /var/www/html"
+
+- hosts: haproxy
+  tasks:
+  - name: "Uninstalling haproxy...."
+    command: "yum remove haproxy -y"
+
+  - name: "Deliting files...."
+    command: "rm -rf /etc/haproxy/"
+

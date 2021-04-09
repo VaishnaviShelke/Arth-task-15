@@ -1,0 +1,3 @@
+---
+# vars file for myloadblancer
+port: 80
