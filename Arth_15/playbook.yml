@@ -1,9 +1,0 @@
-- hosts: webserver
-  roles:
-          - myapache
-
-- hosts: haproxy
-  roles:
-          - myloadblancer
-            
-            
